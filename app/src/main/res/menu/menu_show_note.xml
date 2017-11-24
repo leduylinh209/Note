@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/shownote_camera"
+        android:icon="@drawable/camera_white"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/shownote_gridcolor"
+        android:icon="@drawable/gridview_white"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/shownote_done"
+        android:icon="@drawable/done_white"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/shownote_option"
+        android:icon="@drawable/vert_white"
+        android:title="Item"
+        app:showAsAction="always" />
+
+</menu>
