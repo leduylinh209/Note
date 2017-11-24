@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leduylinh96.activity.ActivityShowNote">
+
+    <GridView
+        android:id="@+id/shownote_gvShowImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/shownote_tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:gravity="right"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/ivCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/shownote_edtTitle"
+        style="@android:style/Widget.Holo.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:typeface="serif">
+
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/shownote_edtNote"
+        style="@android:style/Widget.Holo.Light.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note"
+        android:inputType="text"
+        android:typeface="serif">
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/alarm" />
+
+        <TextView
+            android:id="@+id/shownote_tvAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm" />
+
+        <Spinner
+            android:id="@+id/shownote_spDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/shownote_spTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+        </Spinner>
+
+        <ImageView
+            android:id="@+id/shownote_imgClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/clear"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider"
+                android:showDividers="middle"
+                android:weightSum="4">
+
+                <ImageView
+                    android:id="@+id/shownote_ivLeftArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/left_arrow_white" />
+
+                <ImageView
+                    android:id="@+id/shownote_share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/share_white" />
+
+                <ImageView
+                    android:id="@+id/shownote_ivDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/delete_white" />
+
+                <ImageView
+                    android:id="@+id/shownote_ivRightArrow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/right_arrow_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
